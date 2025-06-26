@@ -1,16 +1,26 @@
 package com.binh.core.example
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.LayoutInflater
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import com.binh.core.ui.BaseActivity
+import androidx.navigation.NavController
+import androidx.navigation.fragment.NavHostFragment
+import com.binh.core.example.databinding.ActivityMainBinding
+import com.binh.core.ui.BaseBindingActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class MainActivity : BaseActivity() {
+class MainActivity : BaseBindingActivity<ActivityMainBinding>() {
+
     private val viewModel: MainViewModel by viewModels()
+
+    private val navController: NavController?
+        get() = (supportFragmentManager.findFragmentById(R.id.nav_host_main) as? NavHostFragment)?.navController
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         val splashScreen = installSplashScreen()
@@ -36,5 +46,13 @@ class MainActivity : BaseActivity() {
         viewModel.user.consume {
             Log.d("MainActivity", "user - ${it.toString()}")
         }
+    }
+
+    override fun inflateLayout(layoutInflater: LayoutInflater) =
+        ActivityMainBinding.inflate(layoutInflater)
+
+    override fun onNewIntent(intent: Intent) {
+        super.onNewIntent(intent)
+        navController?.handleDeepLink(intent)
     }
 }

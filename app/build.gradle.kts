@@ -6,6 +6,7 @@ plugins {
     alias(libs.plugins.buildlogic.android.application.jacoco)
     alias(libs.plugins.buildlogic.android.application.firebase)
     alias(libs.plugins.buildlogic.hilt)
+    alias(libs.plugins.navigation.safeargs.kotlin)
 }
 
 android {
@@ -13,6 +14,7 @@ android {
 
     buildFeatures {
         buildConfig = true
+        viewBinding = true
     }
 
     defaultConfig {
@@ -62,6 +64,9 @@ dependencies {
     ksp(libs.hilt.ext.compiler)
     implementation(libs.hilt.ext.work)
 
+    // hilt-navigation
+    api(libs.hilt.ext.navigation.fragment)
+
     // image loading
     implementation(libs.coil.kt)
 
@@ -79,6 +84,7 @@ dependencies {
     debugImplementation(projects.core.uiTestHiltManifest)
     androidTestImplementation(projects.core.testing)
     androidTestImplementation(libs.androidx.work.testing)
+    androidTestImplementation(libs.androidx.navigation.testing)
 }
 
 dependencyGuard {

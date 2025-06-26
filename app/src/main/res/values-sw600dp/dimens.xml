@@ -1,0 +1,10 @@
+<resources>
+
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+    (such as screen margins) for screens with more than 600dp of width without orientation. This
+    from 7" (~600dp). -->
+
+    <!--spacing-->
+    <dimen name="horizontal_margin">32dp</dimen>
+
+</resources>

@@ -17,6 +17,7 @@
 package com.binh.core.uitesthiltmanifest
 
 import androidx.activity.ComponentActivity
+import androidx.fragment.app.FragmentActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 /**
@@ -24,4 +25,4 @@ import dagger.hilt.android.AndroidEntryPoint
  * for https://github.com/google/dagger/issues/3394
  */
 @AndroidEntryPoint
-class HiltComponentActivity : ComponentActivity()
+class HiltComponentActivity : FragmentActivity()

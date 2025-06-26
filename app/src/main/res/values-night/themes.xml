@@ -3,5 +3,5 @@
         <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
     </style>
 
-    <style name="NightAdjusted.Theme.App" parent="android:Theme.Material.NoActionBar" />
+    <style name="NightAdjusted.Theme.App" parent="Theme.Material3.Dark.NoActionBar" />
 </resources>

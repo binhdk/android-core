@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 600dp of available width. This
+         would include 7" (~600dp) or include phone in landscape. -->
+    <!--spacing-->
+
+    <dimen name="horizontal_margin">32dp</dimen>
+</resources>

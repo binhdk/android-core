@@ -7,6 +7,10 @@ plugins {
 
 android {
     namespace = "com.binh.core.ui"
+
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -17,6 +21,12 @@ dependencies {
     api(libs.androidx.collection.ktx)
     api(libs.androidx.activity)
     api(libs.google.material)
+    api(libs.androidx.fragment)
+    api(libs.androidx.swiperefreshlayout)
+
+    // navigation
+    api(libs.androidx.navigation.fragment)
+    api(libs.androidx.navigation.ui)
 
     // Lifecycle Components
     api(libs.androidx.lifecycle.runtime)

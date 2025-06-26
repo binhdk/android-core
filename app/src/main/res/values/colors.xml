@@ -2,4 +2,79 @@
 <resources>
     <color name="ic_launcher_background_tint">#000000</color>
     <color name="ic_launcher_foreground_tint">#FFFFFF</color>
+
+    <!--Theme colors-->
+
+    <!-- Primary brand color. -->
+    <color name="colorPrimary">#6750A4</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorPrimaryContainer">#EADDFF</color>
+    <color name="colorOnPrimaryContainer">#4F378B</color>
+
+    <!-- Secondary brand color. -->
+    <color name="colorSecondary">#625B71</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+    <color name="colorSecondaryContainer">#E8DEF8</color>
+    <color name="colorOnSecondaryContainer">#4A4458</color>
+
+    <!-- Tertiary color. -->
+    <color name="colorTertiary">#7D5260</color>
+    <color name="colorOnTertiary">#FFFFFF</color>
+    <color name="colorTertiaryContainer">#FFD8E4</color>
+    <color name="colorOnTertiaryContainer">#633B48</color>
+
+    <!--Error color-->
+    <color name="colorError">#B3261E</color>
+    <color name="colorOnError">#FFFFFF</color>
+    <color name="colorErrorContainer">#F9DEDC</color>
+    <color name="colorOnErrorContainer">#8C1D18</color>
+
+    <!-- Surface color. -->
+    <color name="colorSurface">#FEF7FF</color>
+    <color name="colorOnSurface">#1D1B20</color>
+    <color name="colorSurfaceVariant">#E7E0EC</color>
+    <color name="colorOnSurfaceVariant">#49454F</color>
+    <color name="colorSurfaceContainerHighest">#E6E0E9</color>
+    <color name="colorSurfaceContainerHigh">#ECE6F0</color>
+    <color name="colorSurfaceContainer">#F3EDF7</color>
+    <color name="colorSurfaceContainerLow">#F7F2FA</color>
+    <color name="colorSurfaceContainerLowest">#FFFFFF</color>
+    <color name="colorSurfaceInverse">#322F35</color>
+    <color name="colorOnSurfaceInverse">#F5EFF7</color>
+
+    <!--Outline color-->
+    <color name="colorOutline">#79747E</color>
+    <color name="colorOutlineVariant">#CAC4D0</color>
+
+    <!--Start Add-ons-->
+    <!--primary-->
+    <color name="colorPrimaryFixed">#EADDFF</color>
+    <color name="colorOnPrimaryFixed">#21005D</color>
+    <color name="colorPrimaryFixedDim">#D0BCFF</color>
+    <color name="colorOnPrimaryFixedVariant">#4F378B</color>
+    <color name="colorPrimaryInverse">#D0BCFF</color>
+    <!--secondary-->
+    <color name="colorSecondaryFixed">#E8DEF8</color>
+    <color name="colorOnSecondaryFixed">#1D192B</color>
+    <color name="colorOnSecondaryFixedVariant">#4A4458</color>
+    <color name="colorSecondaryFixedDim">#CCC2DC</color>
+    <!--tertiary-->
+    <color name="colorTertiaryFixed">#FFD8E4</color>
+    <color name="colorOnTertiaryFixed">#31111D</color>
+    <color name="colorOnTertiaryFixedVariant">#633B48</color>
+    <color name="colorTertiaryFixedDim">#EFB8C8</color>
+    <!--surface-->
+    <color name="colorBackground">#FEF7FF</color>
+    <color name="colorOnBackground">#1D1B20</color>
+    <color name="colorSurfaceBright">#FEF7FF</color>
+    <color name="colorSurfaceDim">#DED8E1</color>
+    <color name="scrim">#000000</color>
+    <color name="shadow">#000000</color>
+    <!--End Add-ons-->
+
+    <!--Theme colors-->
+
+    <!--Custom colors here-->
+
+    <color name="box_stroke">#F2F2F2</color>
 </resources>

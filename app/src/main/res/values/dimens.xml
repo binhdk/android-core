@@ -1,0 +1,25 @@
+<resources>
+
+    <!--spacing-->
+    <dimen name="horizontal_margin">16dp</dimen>
+    <dimen name="vertical_margin">16dp</dimen>
+    <dimen name="view_padding">8dp</dimen>
+    <dimen name="dialog_horizontal_margin">8dp</dimen>
+
+
+    <!--font size-->
+    <dimen name="font_large">22sp</dimen>
+    <dimen name="font_medium">18sp</dimen>
+    <dimen name="font_normal">16sp</dimen>
+    <dimen name="font_small">14sp</dimen>
+    <dimen name="font_extra_small">12sp</dimen>
+
+    <!--common-->
+    <dimen name="border_radius">4dp</dimen>
+
+
+    <dimen name="view_height">200dp</dimen>
+    <dimen name="dialog_vertical_margin">8dp</dimen>
+
+
+</resources>

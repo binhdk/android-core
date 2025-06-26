@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.util.Log
 import android.view.WindowInsets
 import androidx.activity.ComponentActivity
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
@@ -19,7 +21,9 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 
-abstract class BaseActivity : ComponentActivity() {
+abstract class BaseActivity : AppCompatActivity() {
+
+    open val layoutId: Int get() = View.NO_ID
 
     @Inject
     lateinit var networkMonitor: NetworkMonitor
@@ -50,6 +54,9 @@ abstract class BaseActivity : ComponentActivity() {
 
 
     open fun onCreateContentView() {
+        if (layoutId != View.NO_ID) {
+            setContentView(layoutId)
+        }
 
     }
 

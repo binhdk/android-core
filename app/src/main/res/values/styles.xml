@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--button-->
+    <style name="Widget.App.Button" parent="Widget.Material3.Button">
+        <item name="android:textAppearance">@style/TextAppearance.App.Normal.Weight700</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!--textview-->
+    <style name="Widget.App.TextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.App.Small.Weight400</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!--edittext-->
+    <style name="Widget.App.EditText" parent="Base.Widget.MaterialComponents.TextInputEditText">
+        <item name="android:textAppearance">@style/TextAppearance.App.Normal.Weight400</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!--TextInputLayout-->
+    <style name="Widget.App.TextInputLayout.Outlined" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="boxStrokeColor">@color/selector_box_stroke_color</item>
+    </style>
+
+    <style name="Widget.App.TextInputLayout.Outlined.Form">
+
+    </style>
+
+    <style name="Widget.App.TextInputLayout.Outlined.Form.Transparent">
+
+    </style>
+
+    <!-- check box-->
+    <style name="Widget.App.CheckBox" parent="Widget.Material3.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_checkbox</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="Widget.App.CheckBox.Radio">
+        <item name="android:button">@drawable/selector_radio</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!--bottom navigation-->
+    <style name="Widget.App.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:minHeight">72dp</item>
+        <item name="itemActiveIndicatorStyle">
+            @style/Widget.App.BottomNavigationView.ActiveIndicator
+        </item>
+
+    </style>
+
+    <style name="Widget.App.BottomNavigationView.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+
+    </style>
+
+    <!-- shape appearance -->
+
+    <style name="ShapeAppearance.App" parent="">
+
+    </style>
+
+    <style name="ShapeAppearance.App.Pill">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ShapeAppearance.App.RoundedShape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <!--text-->
+    <style name="TextAppearance.App" parent="android:TextAppearance">
+
+    </style>
+
+    <!--micro text-->
+    <style name="TextAppearance.App.ExtraSmall">
+        <item name="android:textSize">@dimen/font_extra_small</item>
+    </style>
+
+    <style name="TextAppearance.App.ExtraSmall.Weight100" parent="TextAppearance.Material3.DisplayLarge">
+        <item name="fontWeight">100</item>
+        <item name="android:fontWeight" tools:targetApi="o">100</item>
+        <item name="android:textFontWeight" tools:targetApi="p">100</item>
+    </style>
+
+    <style name="TextAppearance.App.ExtraSmall.Weight200">
+        <item name="fontWeight">200</item>
+        <item name="android:fontWeight" tools:targetApi="o">200</item>
+        <item name="android:textFontWeight" tools:targetApi="p">200</item>
+    </style>
+
+    <style name="TextAppearance.App.ExtraSmall.Weight300">
+        <item name="fontWeight">300</item>
+        <item name="android:fontWeight" tools:targetApi="o">300</item>
+        <item name="android:textFontWeight" tools:targetApi="p">300</item>
+    </style>
+
+    <style name="TextAppearance.App.ExtraSmall.Weight400">
+        <item name="fontWeight">400</item>
+        <item name="android:fontWeight" tools:targetApi="o">400</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+
+    <style name="TextAppearance.App.ExtraSmall.Weight500">
+        <item name="fontWeight">500</item>
+        <item name="android:fontWeight" tools:targetApi="o">500</item>
+        <item name="android:textFontWeight" tools:targetApi="p">500</item>
+    </style>
+
+    <style name="TextAppearance.App.ExtraSmall.Weight600">
+        <item name="fontWeight">600</item>
+        <item name="android:fontWeight" tools:targetApi="o">600</item>
+        <item name="android:textFontWeight" tools:targetApi="p">600</item>
+    </style>
+
+    <style name="TextAppearance.App.ExtraSmall.Weight700">
+        <item name="fontWeight">700</item>
+        <item name="android:fontWeight" tools:targetApi="o">700</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+    </style>
+
+    <style name="TextAppearance.App.ExtraSmall.Weight800">
+        <item name="fontWeight">800</item>
+        <item name="android:fontWeight" tools:targetApi="o">800</item>
+        <item name="android:textFontWeight" tools:targetApi="p">800</item>
+    </style>
+
+    <style name="TextAppearance.App.ExtraSmall.Weight900">
+        <item name="fontWeight">900</item>
+        <item name="android:fontWeight" tools:targetApi="o">900</item>
+        <item name="android:textFontWeight" tools:targetApi="p">900</item>
+    </style>
+
+    <!--small text-->
+    <style name="TextAppearance.App.Small">
+        <item name="android:textSize">@dimen/font_small</item>
+    </style>
+
+    <style name="TextAppearance.App.Small.Weight100">
+        <item name="fontWeight">100</item>
+        <item name="android:fontWeight" tools:targetApi="o">100</item>
+        <item name="android:textFontWeight" tools:targetApi="p">100</item>
+    </style>
+
+    <style name="TextAppearance.App.Small.Weight200">
+        <item name="fontWeight">200</item>
+        <item name="android:fontWeight" tools:targetApi="o">200</item>
+        <item name="android:textFontWeight" tools:targetApi="p">200</item>
+    </style>
+
+    <style name="TextAppearance.App.Small.Weight300">
+        <item name="fontWeight">300</item>
+        <item name="android:fontWeight" tools:targetApi="o">300</item>
+        <item name="android:textFontWeight" tools:targetApi="p">300</item>
+    </style>
+
+    <style name="TextAppearance.App.Small.Weight400">
+        <item name="fontWeight">400</item>
+        <item name="android:fontWeight" tools:targetApi="o">400</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+
+    <style name="TextAppearance.App.Small.Weight500">
+        <item name="fontWeight">500</item>
+        <item name="android:fontWeight" tools:targetApi="o">500</item>
+        <item name="android:textFontWeight" tools:targetApi="p">500</item>
+    </style>
+
+    <style name="TextAppearance.App.Small.Weight600">
+        <item name="fontWeight">600</item>
+        <item name="android:fontWeight" tools:targetApi="o">600</item>
+        <item name="android:textFontWeight" tools:targetApi="p">600</item>
+    </style>
+
+    <style name="TextAppearance.App.Small.Weight700">
+        <item name="fontWeight">700</item>
+        <item name="android:fontWeight" tools:targetApi="o">700</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+    </style>
+
+    <style name="TextAppearance.App.Small.Weight800">
+        <item name="fontWeight">800</item>
+        <item name="android:fontWeight" tools:targetApi="o">800</item>
+        <item name="android:textFontWeight" tools:targetApi="p">800</item>
+    </style>
+
+    <style name="TextAppearance.App.Small.Weight900">
+        <item name="fontWeight">900</item>
+        <item name="android:fontWeight" tools:targetApi="o">900</item>
+        <item name="android:textFontWeight" tools:targetApi="p">900</item>
+    </style>
+
+    <!--normal text-->
+    <style name="TextAppearance.App.Normal">
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+    <style name="TextAppearance.App.Normal.Weight100">
+        <item name="fontWeight">100</item>
+        <item name="android:fontWeight" tools:targetApi="o">100</item>
+        <item name="android:textFontWeight" tools:targetApi="p">100</item>
+    </style>
+
+    <style name="TextAppearance.App.Normal.Weight200">
+        <item name="fontWeight">200</item>
+        <item name="android:fontWeight" tools:targetApi="o">200</item>
+        <item name="android:textFontWeight" tools:targetApi="p">200</item>
+    </style>
+
+    <style name="TextAppearance.App.Normal.Weight300">
+        <item name="fontWeight">300</item>
+        <item name="android:fontWeight" tools:targetApi="o">300</item>
+        <item name="android:textFontWeight" tools:targetApi="p">300</item>
+    </style>
+
+    <style name="TextAppearance.App.Normal.Weight400">
+        <item name="fontWeight">400</item>
+        <item name="android:fontWeight" tools:targetApi="o">400</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+
+    <style name="TextAppearance.App.Normal.Weight500">
+        <item name="fontWeight">500</item>
+        <item name="android:fontWeight" tools:targetApi="o">500</item>
+        <item name="android:textFontWeight" tools:targetApi="p">500</item>
+    </style>
+
+    <style name="TextAppearance.App.Normal.Weight600">
+        <item name="fontWeight">600</item>
+        <item name="android:fontWeight" tools:targetApi="o">600</item>
+        <item name="android:textFontWeight" tools:targetApi="p">600</item>
+    </style>
+
+    <style name="TextAppearance.App.Normal.Weight700">
+        <item name="fontWeight">700</item>
+        <item name="android:fontWeight" tools:targetApi="o">700</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+    </style>
+
+    <style name="TextAppearance.App.Normal.Weight800">
+        <item name="fontWeight">800</item>
+        <item name="android:fontWeight" tools:targetApi="o">800</item>
+        <item name="android:textFontWeight" tools:targetApi="p">800</item>
+    </style>
+
+    <style name="TextAppearance.App.Normal.Weight900">
+        <item name="fontWeight">900</item>
+        <item name="android:fontWeight" tools:targetApi="o">900</item>
+        <item name="android:textFontWeight" tools:targetApi="p">900</item>
+    </style>
+
+    <!--medium text-->
+    <style name="TextAppearance.App.Medium">
+        <item name="android:textSize">@dimen/font_medium</item>
+    </style>
+
+    <style name="TextAppearance.App.Medium.Weight100">
+        <item name="fontWeight">100</item>
+        <item name="android:fontWeight" tools:targetApi="o">100</item>
+        <item name="android:textFontWeight" tools:targetApi="p">100</item>
+    </style>
+
+    <style name="TextAppearance.App.Medium.Weight200">
+        <item name="fontWeight">200</item>
+        <item name="android:fontWeight" tools:targetApi="o">200</item>
+        <item name="android:textFontWeight" tools:targetApi="p">200</item>
+    </style>
+
+    <style name="TextAppearance.App.Medium.Weight300">
+        <item name="fontWeight">300</item>
+        <item name="android:fontWeight" tools:targetApi="o">300</item>
+        <item name="android:textFontWeight" tools:targetApi="p">300</item>
+    </style>
+
+    <style name="TextAppearance.App.Medium.Weight400">
+        <item name="fontWeight">400</item>
+        <item name="android:fontWeight" tools:targetApi="o">400</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+
+    <style name="TextAppearance.App.Medium.Weight500">
+        <item name="fontWeight">500</item>
+        <item name="android:fontWeight" tools:targetApi="o">500</item>
+        <item name="android:textFontWeight" tools:targetApi="p">500</item>
+    </style>
+
+    <style name="TextAppearance.App.Medium.Weight600">
+        <item name="fontWeight">600</item>
+        <item name="android:fontWeight" tools:targetApi="o">600</item>
+        <item name="android:textFontWeight" tools:targetApi="p">600</item>
+    </style>
+
+    <style name="TextAppearance.App.Medium.Weight700">
+        <item name="fontWeight">700</item>
+        <item name="android:fontWeight" tools:targetApi="o">700</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+    </style>
+
+    <style name="TextAppearance.App.Medium.Weight800">
+        <item name="fontWeight">300</item>
+        <item name="android:fontWeight" tools:targetApi="o">300</item>
+        <item name="android:textFontWeight" tools:targetApi="p">300</item>
+    </style>
+
+    <style name="TextAppearance.App.Medium.Weight900">
+        <item name="fontWeight">300</item>
+        <item name="android:fontWeight" tools:targetApi="o">300</item>
+        <item name="android:textFontWeight" tools:targetApi="p">300</item>
+    </style>
+
+    <!--large text-->
+    <style name="TextAppearance.App.Large">
+        <item name="android:textSize">@dimen/font_large</item>
+    </style>
+
+    <style name="TextAppearance.App.Large.Weight100">
+        <item name="fontWeight">100</item>
+        <item name="android:fontWeight" tools:targetApi="o">100</item>
+        <item name="android:textFontWeight" tools:targetApi="p">100</item>
+    </style>
+
+    <style name="TextAppearance.App.Large.Weight200">
+        <item name="fontWeight">200</item>
+        <item name="android:fontWeight" tools:targetApi="o">200</item>
+        <item name="android:textFontWeight" tools:targetApi="p">200</item>
+    </style>
+
+    <style name="TextAppearance.App.Large.Weight300">
+        <item name="fontWeight">300</item>
+        <item name="android:fontWeight" tools:targetApi="o">300</item>
+        <item name="android:textFontWeight" tools:targetApi="p">300</item>
+    </style>
+
+    <style name="TextAppearance.App.Large.Weight400">
+        <item name="fontWeight">400</item>
+        <item name="android:fontWeight" tools:targetApi="o">400</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+
+    <style name="TextAppearance.App.Large.Weight500">
+        <item name="fontWeight">500</item>
+        <item name="android:fontWeight" tools:targetApi="o">500</item>
+        <item name="android:textFontWeight" tools:targetApi="p">500</item>
+    </style>
+
+    <style name="TextAppearance.App.Large.Weight600">
+        <item name="fontWeight">600</item>
+        <item name="android:fontWeight" tools:targetApi="o">600</item>
+        <item name="android:textFontWeight" tools:targetApi="p">600</item>
+    </style>
+
+    <style name="TextAppearance.App.Large.Weight700">
+        <item name="fontWeight">700</item>
+        <item name="android:fontWeight" tools:targetApi="o">700</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+    </style>
+
+    <style name="TextAppearance.App.Large.Weight800">
+        <item name="fontWeight">800</item>
+        <item name="android:fontWeight" tools:targetApi="o">800</item>
+        <item name="android:textFontWeight" tools:targetApi="p">800</item>
+    </style>
+
+    <style name="TextAppearance.App.Large.Weight900">
+        <item name="fontWeight">900</item>
+        <item name="android:fontWeight" tools:targetApi="o">900</item>
+        <item name="android:textFontWeight" tools:targetApi="p">900</item>
+    </style>
+</resources>

@@ -7,3 +7,8 @@ plugins {
 android {
     namespace = "com.binh.core.uitesthiltmanifest"
 }
+
+dependencies {
+    implementation(libs.androidx.test.core)
+    api(libs.androidx.fragment.testing)
+}
