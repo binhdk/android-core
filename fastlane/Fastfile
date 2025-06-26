@@ -1,0 +1,83 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:android)
+
+platform :android do
+
+
+  desc "Build dev"
+    lane :build_dev do
+      gradle(task: "clean")
+      gradle(task: 'assemble', flavor: 'dev', build_type: 'Release')
+    end
+
+
+  desc "Build staging"
+    lane :build_staging do
+      gradle(task: "clean")
+      gradle(task: 'assemble', flavor: 'stag', build_type: 'Release')
+    end
+
+
+  desc "Build production"
+    lane :build_production do
+      gradle(task: "clean")
+      gradle(task: 'assemble', flavor: 'prod', build_type: 'Release')
+    end
+
+  desc "Build aab"
+    lane :build_aab do
+      gradle(task: "clean")
+      gradle(task: 'bundle', flavor: 'prod', build_type: 'Release')
+    end
+
+
+  desc "Distribute dev app to Firebase"
+    lane :distribute_dev do |options|
+      build_dev
+      firebase_app_distribution(
+          app: "your_firebase_app_id",
+          testers_file: "./testers.txt",
+          release_notes_file: "./release_notes.txt"
+      )
+    end
+
+
+  desc "Distribute staging app to Firebase"
+    lane :distribute_staging do |options|
+      build_staging
+      firebase_app_distribution(
+          app: "your_firebase_app_id",
+          testers_file: "./testers.txt",
+          release_notes_file: "./release_notes.txt"
+      )
+    end
+
+
+  desc "Distribute production app to Firebase"
+    lane :distribute do |options|
+      build_production
+      firebase_app_distribution(
+          app: "your_firebase_app_id",
+          testers_file: "./testers.txt",
+          release_notes_file: "./release_notes.txt"
+      )
+    end
+
+
+end
+
+
