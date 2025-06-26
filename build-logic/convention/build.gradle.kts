@@ -37,6 +37,7 @@ kotlin {
 
 dependencies {
     compileOnly(libs.android.gradlePlugin)
+    compileOnly(libs.compose.gradlePlugin)
     compileOnly(libs.firebase.crashlytics.gradlePlugin)
     compileOnly(libs.firebase.performance.gradlePlugin)
     compileOnly(libs.kotlin.gradlePlugin)
@@ -57,6 +58,10 @@ gradlePlugin {
             id = "buildlogic.android.application"
             implementationClass = "AndroidApplicationConventionPlugin"
         }
+        register("androidApplicationCompose") {
+            id = "buildlogic.android.application.compose"
+            implementationClass = "AndroidApplicationComposeConventionPlugin"
+        }
         register("androidApplicationJacoco") {
             id = "buildlogic.android.application.jacoco"
             implementationClass = "AndroidApplicationJacocoConventionPlugin"
@@ -64,6 +69,10 @@ gradlePlugin {
         register("androidLibrary") {
             id = "buildlogic.android.library"
             implementationClass = "AndroidLibraryConventionPlugin"
+        }
+        register("androidLibraryCompose") {
+            id = "buildlogic.android.library.compose"
+            implementationClass = "AndroidLibraryComposeConventionPlugin"
         }
         register("androidLibraryJacoco") {
             id = "buildlogic.android.library.jacoco"

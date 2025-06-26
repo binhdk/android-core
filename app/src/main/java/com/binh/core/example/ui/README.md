@@ -1,1 +1,1 @@
-# package contain app features
+# package contain app ui

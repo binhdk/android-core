@@ -26,7 +26,6 @@ abstract class BaseActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        onCreateContentView()
         monitorNetwork()
         onStateChanged()
         initState()
@@ -46,11 +45,6 @@ abstract class BaseActivity : ComponentActivity() {
     override fun onConfigurationChanged(newConfig: Configuration) {
         super.onConfigurationChanged(newConfig)
         // handle changed
-    }
-
-
-    open fun onCreateContentView() {
-
     }
 
     open fun onStateChanged() {
