@@ -61,7 +61,7 @@ class MainActivity : BaseActivity() {
                 ) { systemDark, uiState ->
                     ThemeSettings(
                         darkTheme = uiState.shouldUseDarkTheme(systemDark),
-                        enableDynamicTheming = Loading.shouldEnableDynamicTheming,
+                        enableDynamicTheming = uiState.shouldEnableDynamicTheming,
                     )
                 }
                     .onEach { themeSettings = it }
